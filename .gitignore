@@ -1,0 +1,30 @@
+# 前端依赖包（node_modules）
+node_modules/
+dist/
+.npm/
+
+# Java编译目录
+target/
+*.class
+*.jar
+*.war
+
+# IDE配置文件（VS Code、IDEA）
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+*.tmp
+*.swp
+
+# 数据库备份文件（可选，看你项目）
+*.sql
+*.dump
