@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuejiaao.foodapp.mapper.ShopFansMapper">
+
+    <!-- 根据店铺ID统计粉丝数量 -->
+    <select id="countBySid" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM shop_fans WHERE sid = #{sid} AND status = 1
+    </select>
+
+    <!-- 根据客户ID和店铺ID查询关注状态 -->
+    <select id="getStatusByCidAndSid" resultType="java.lang.Integer">
+        SELECT status FROM shop_fans WHERE cid = #{cid} AND sid = #{sid}
+    </select>
+
+</mapper>

@@ -1,0 +1,18 @@
+@import '@/uni_modules/uni-scss/variables.scss';
+// 主题色变量
+$theme-color: var(--theme-color, #007AFF);
+$theme-color-light: var(--theme-color-light, #E8F3FF);
+
+// 在现有样式中使用这些变量
+.header {
+  background-color: $theme-color;
+}
+
+.button-primary {
+  background-color: $theme-color;
+}
+
+.nav-active {
+  color: $theme-color;
+  border-color: $theme-color;
+}
